@@ -3,7 +3,94 @@
 <head>
 <title>Final Project Prototype</title>
 <meta charset="utf-8">
-<link rel="stylesheet" href="prototype.css">
+<style>
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+body {
+font-family: Arial, sans-serif;
+line-height: 1.6;
+}
+
+header {
+background-color: #f8f9fa;
+padding: 20px;
+text-align: center;
+border-bottom: 1px solid #ddd;
+}
+
+h1 {
+color: #333;
+margin-bottom: 5px;
+}
+
+nav ul {
+list-style-type: none;
+padding: 15px 0;
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+}
+
+nav ul li {
+margin: 0 15px;
+}
+
+nav ul li a {
+text-decoration: none;
+color: #333;
+font-weight: bold;
+transition: color 0.3s;
+}
+
+nav ul li a:hover {
+color: #0066cc;
+}
+
+main {
+max-width: 1200px;
+margin: 30px auto;
+padding: 0 20px;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 30px;
+}
+
+.destination-card {
+text-align: center;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+border-radius: 8px;
+overflow: hidden;
+transition: transform 0.3s;
+}
+
+.destination-card:hover {
+transform: translateY(-5px);
+}
+
+.destination-card img {
+width: 100%;
+height: auto;
+display: block;
+}
+
+.destination-card p {
+padding: 15px;
+font-weight: bold;
+font-size: 18px;
+}
+
+footer {
+background-color: #333;
+color: white;
+text-align: center;
+padding: 20px;
+margin-top: 30px;
+}
+</style>
 </head>
 <body>
 <header>
@@ -12,42 +99,41 @@
 <nav>
 <ul>
 <li><a href="#">Home</a></li>
-<li><a href="#">Information</a></</li>
-<li><a href="#">Dining & Restaurants</a></</li>
-<li><a href="#">Budget & Expenses</a></</li>
-<li><a href="#">Entertainment Activities</a></</li>
+<li><a href="#">Information</a></li>
+<li><a href="#">Dining & Restaurants</a></li>
+<li><a href="#">Budget & Expenses</a></li>
+<li><a href="#">Entertainment Activities</a></li>
 </ul>
 </nav>
 </header>
 <main>
-<div>
-<img src="PlaceHolder.png">
+<div class="destination-card">
+<img src="PlaceHolder.png" alt="Destination Image">
 <p>Country Name</p>
 </div>
-<div>
-<img src="PlaceHolder.png">
+<div class="destination-card">
+<img src="PlaceHolder.png" alt="Destination Image">
 <p>Country Name</p>
 </div>
-<div>
-
-<img src="PlaceHolder.png">
+<div class="destination-card">
+<img src="PlaceHolder.png" alt="Destination Image">
 <p>Country Name</p>
 </div>
-<div>
-<img src="PlaceHolder.png">
+<div class="destination-card">
+<img src="PlaceHolder.png" alt="Destination Image">
 <p>Country Name</p>
 </div>
-<div>
-<img src="PlaceHolder.png">
+<div class="destination-card">
+<img src="PlaceHolder.png" alt="Destination Image">
 <p>Country Name</p>
 </div>
-<div>
-<img src="PlaceHolder.png">
+<div class="destination-card">
+<img src="PlaceHolder.png" alt="Destination Image">
 <p>Country Name</p>
 </div>
 </main>
 <footer>
-
+<p>&copy; 2025 Global Wanderer. All rights reserved.</p>
 </footer>
 </body>
 </html>
